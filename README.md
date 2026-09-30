@@ -1,111 +1,59 @@
-# P J Tivin Elvis — Portfolio Project
+# P J Tivin Elvis — Portfolio
 
-A modern, highly modular portfolio platform featuring three distinct bespoke themes, organized into cleanly decoupled directories for assets, sections, styles, and scripts.
+A unified, high-performance portfolio featuring bespoke typography powered by the **Sentient** font suite, WebGL Volumetric Light Rays, deep obsidian contrast, and modular architecture.
 
 ---
 
-## 📁 Project Architecture & Folder Organization
+## 📁 Architecture & File Structure
 
 ```text
 portfolio-deploy/
-├── index.html                           ← Primary production entry point (Minimalist Light theme)
-├── vercel.json                          ← Vercel deployment & routing config
-├── README.md                            ← Project documentation
-├── profile.png                          ← Optional profile photo (drop here)
+├── index.html                   ← Primary production entry point
+├── vercel.json                  ← Vercel deployment configuration
+├── README.md                    ← Project documentation
+├── profile.png                  ← Profile portrait
 │
-├── assets/                              ← Root Assets for production site
+├── assets/
 │   ├── css/
-│   │   ├── variables.css                ← Design tokens (colors, fonts, shadows)
-│   │   ├── base.css                     ← Reset, layout container & background glows
-│   │   ├── components.css               ← Modular component styles (nav, hero, cards, etc.)
-│   │   └── style.css                    ← Master stylesheet bundle
+│   │   ├── variables.css        ← Design tokens (deep obsidian, off-white text, crimson & gold accents)
+│   │   ├── sentient.css         ← Sentient typography definitions & responsive font scale
+│   │   ├── base.css             ← Reset, background aura & base styles
+│   │   ├── components.css       ← Component styles (nav, hero, cards, forms, grid)
+│   │   ├── light-rays.css       ← WebGL volumetric light rays container & toggle styles
+│   │   └── style.css            ← Master stylesheet bundle
+│   │
+│   ├── fonts/                   ← Local Sentient font suite (WOFF2, WOFF, TTF, Variable)
+│   │
 │   └── js/
-│       └── main.js                      ← Glass navbar & smooth navigation logic
+│       ├── light-rays.js        ← WebGL volumetric light rays shader engine
+│       └── main.js              ← Navbar scroll, smooth navigation & Light Rays control
 │
-├── sections/                            ← Modular HTML sections for active site
-│   ├── navbar.html                      ← Sticky glass header & navigation
-│   ├── hero.html                        ← Headline, bio, CTAs & portrait stage
-│   ├── about.html                       ← Narrative and key metrics
-│   ├── skills.html                      ← 6 Technical domain cards
-│   ├── projects.html                    ← Curated works & GitHub showcase
-│   ├── contact.html                     ← Direct email & social buttons
-│   └── footer.html                      ← Site footer & credits
-│
-└── pages/                               ← Dedicated standalone themes & page designs
-    │
-    ├── minimalist-light/                ← Page 1: Minimalist Light (Warm Pastel Sand & Crimson)
-    │   ├── index.html                   ← Standalone page
-    │   ├── css/
-    │   │   ├── variables.css
-    │   │   ├── base.css
-    │   │   ├── components.css
-    │   │   └── style.css
-    │   ├── js/
-    │   │   └── main.js
-    │   └── sections/
-    │       ├── navbar.html, hero.html, about.html, skills.html,
-    │       ├── projects.html, contact.html, footer.html
-    │
-    ├── noir-aztec/                      ← Page 2: Noir Aztec (Film Noir Navy & Sun Stone Geometry)
-    │   ├── index.html                   ← Standalone page
-    │   ├── css/
-    │   │   ├── variables.css
-    │   │   ├── components.css
-    │   │   └── style.css
-    │   ├── js/
-    │   │   ├── cursor.js                ← Custom animated dual-ring cursor
-    │   │   ├── sunstone.js              ← Generative SVG Sun Stone & parallax
-    │   │   └── main.js                  ← Navigation scroll spy & scroll reveal
-    │   └── sections/
-    │       ├── navbar.html, hero.html, work.html, about.html,
-    │       ├── capabilities.html, contact.html, footer.html
-    │
-    └── royal-luxury/                    ← Page 3: Royal Luxury (Gold & Crimson with Constellation Canvas)
-        ├── index.html                   ← Standalone page
-        ├── css/
-        │   ├── variables.css
-        │   ├── components.css
-        │   └── style.css
-        ├── js/
-        │   ├── cursor.js                ← Custom gold cursor & crosshairs
-        │   ├── particles.js             ← Interactive canvas particle constellation & nebula
-        │   ├── widgets.js               ← Live trading chart, bookshelf, basketball & F1 track
-        │   └── main.js                  ← Scroll reveal & progress bar animations
-        └── sections/
-            ├── navbar.html, hero.html, about.html, skills.html,
-            ├── projects.html, widgets.html, contact.html, footer.html
+└── sections/                    ← Modular HTML sections
+    ├── navbar.html              ← Sticky glass header & navigation
+    ├── hero.html                ← Headline, bio, interactive toggle & portrait stage
+    ├── about.html               ← Narrative, metrics & educational background
+    ├── skills.html              ← Technical skill categories & pill tags
+    ├── projects.html            ← Featured projects grid (Deep Learning, Vision, Engineering, Analytics)
+    ├── contact.html             ← Direct email & contact actions
+    └── footer.html              ← Site credits
 ```
 
 ---
 
-## 🎨 Available Themes
+## ✨ Features & Design System
 
-1. **Minimalist Light** (`index.html` or `pages/minimalist-light/index.html`)
-   - Warm pastel gold / sand / champagne background (`#f9f6f0`) with rich cream crimson (`#8c1d28`) accents.
-   - Clean editorial typography (*Instrument Serif* + *Plus Jakarta Sans*).
-   - Crisp cards, domain capsules, and cutout portrait stage.
-
-2. **Noir Aztec** (`pages/noir-aztec/index.html`)
-   - 2am film-noir dark navy (`#0D1F2D`) with warm sand punch (`#D4C4B0`).
-   - Generative Aztec Sun Stone (*Piedra del Sol*) geometry and parallax.
-   - Aztec step-fret greca dividers, diamond lattice texture, and smooth custom cursor.
-
-3. **Royal Luxury** (`pages/royal-luxury/index.html`)
-   - Imperial void black (`#020205`) and luxury gold (`#d4af37`) with crimson undertones.
-   - Live canvas particle constellation network and shooting stars.
-   - 5 interactive widgets: Live Trading Ticker, Bookshelf peek, Basketball game, Leaderboard win-rate, and F1 Racing track.
-
-*Note: A floating theme switcher pill is located in the bottom-right corner of each page to effortlessly explore between designs.*
+- **Sentient Typography**: Premium serif display typography paired with *Plus Jakarta Sans* for clean, modern readability.
+- **Deep Obsidian Noir Palette**: High-contrast dark theme with `#0c0b0a` obsidian base, `#181716` card layers, `#ffffff` pure white headings, and `#faf7f2` luminous off-white body copy.
+- **WebGL Volumetric Light Rays**: Interactive shader-driven light ray effect on the hero stage with mouse influence and an interactive toggle button.
+- **Native Precision Cursor**: Standard browser cursor for clean, responsive desktop and mobile interaction.
+- **Responsive Layout**: Designed for mobile, tablet, and widescreen monitors with CSS Grid and Flexbox.
 
 ---
 
-## 🚀 Deployment (Vercel)
-
-The project is preconfigured for zero-configuration static deployment via Vercel.
+## 🚀 Running Locally
 
 ```bash
-cd portfolio-deploy
-vercel
+# Start a simple local server
+python -m http.server 8080
 ```
-
-All static assets, subdirectories, and page themes will be served automatically.
+Open [http://localhost:8080](http://localhost:8080) in your browser.
