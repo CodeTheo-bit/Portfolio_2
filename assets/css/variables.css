@@ -1,22 +1,23 @@
-/* Design Tokens — Pure Black & Luminous Typography */
+/* Design Tokens — Rich Black & Ferrofluid System */
 :root {
-  /* Full pitch black background system */
+  /* Rich pitch black background system */
   --bg-base: #000000;
-  --bg-alt: #050505;
-  --bg-card: #0a0a0a;
-  --bg-card-subtle: #121212;
+  --bg-alt: #040404;
+  --bg-card: rgba(10, 10, 10, 0.78);
+  --bg-card-subtle: rgba(18, 18, 18, 0.65);
   
-  /* Rich wine / crimson accents */
-  --crimson-rich: #c03040;
-  --crimson-hover: #e0384c;
-  --crimson-light: rgba(192, 48, 64, 0.15);
-  --crimson-border: rgba(192, 48, 64, 0.35);
+  /* Rich crimson ruby accents (matching Ferrofluid #923847) */
+  --crimson-rich: #923847;
+  --crimson-hover: #b84357;
+  --crimson-light: rgba(146, 56, 71, 0.2);
+  --crimson-border: rgba(146, 56, 71, 0.4);
 
-  /* Radiant amber / gold accents */
-  --gold-pastel: #d0780d;
-  --gold-accent: #e59020;
-  --gold-border: rgba(208, 120, 13, 0.3);
-  --border-subtle: rgba(255, 255, 255, 0.08);
+  /* Ethereal lavender & white accents (matching Ferrofluid #c6b4e5) */
+  --lavender-ethereal: #c6b4e5;
+  --gold-pastel: #c6b4e5;
+  --gold-accent: #ded4f4;
+  --gold-border: rgba(198, 180, 229, 0.25);
+  --border-subtle: rgba(255, 255, 255, 0.09);
 
   /* White and Luminous Off-White Typography System */
   --text-main: #ffffff;         /* Pure crisp white for all main titles & headings */

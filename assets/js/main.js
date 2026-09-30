@@ -23,37 +23,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Initialize WebGL Light Rays effect on hero
-  const lightRaysContainer = document.getElementById('light-rays-hero');
-  if (lightRaysContainer && typeof initLightRays === 'function') {
-    const rays = initLightRays(lightRaysContainer, {
-      raysOrigin: 'right',
-      raysColor: '#d0780d',
-      raysSpeed: 0.7,
-      lightSpread: 0.7,
-      rayLength: 1.2,
-      followMouse: true,
-      mouseInfluence: 0.4,
-      noiseAmount: 0.36,
-      distortion: 0.6,
-      pulsating: true,
-      fadeDistance: 1.6,
-      saturation: 1.3,
-      lightMode: false
+  // Initialize React Bits Ferrofluid background across the entire page
+  const ferrofluidContainer = document.getElementById('ferrofluid-bg');
+  if (ferrofluidContainer && typeof initFerrofluid === 'function') {
+    const fluid = initFerrofluid(ferrofluidContainer, {
+      colors: ["#c6b4e5", "#ffffff", "#923847"],
+      speed: 0.2,
+      scale: 1,
+      turbulence: 0.15,
+      fluidity: 0.11,
+      rimWidth: 0.12,
+      sharpness: 1.6,
+      shimmer: 1.2,
+      glow: 1.1,
+      flowDirection: "left",
+      opacity: 1,
+      mouseInteraction: false,
+      mouseStrength: 1,
+      mouseRadius: 0.55
     });
-
-    window.lightRaysHero = rays;
-
-    const toggleBtn = document.getElementById('lightRaysToggle');
-    if (toggleBtn && rays) {
-      toggleBtn.addEventListener('click', () => {
-        const active = rays.toggle();
-        toggleBtn.classList.toggle('off', !active);
-        const label = toggleBtn.querySelector('.label');
-        if (label) {
-          label.textContent = active ? '✨ Light Rays: ON' : '✨ Light Rays: OFF';
-        }
-      });
-    }
+    window.ferrofluidBackground = fluid;
   }
 });
