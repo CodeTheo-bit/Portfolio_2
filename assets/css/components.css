@@ -11,11 +11,11 @@ header {
 
 header.scrolled {
   padding: 14px 0;
-  background: rgba(249, 246, 240, 0.9);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-subtle);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
 }
 
 .nav-inner {
@@ -269,8 +269,8 @@ header.scrolled {
   width: 380px;
   height: 380px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(232, 222, 200, 0.8) 0%, rgba(250, 236, 238, 0.5) 60%, transparent 80%);
-  filter: blur(40px);
+  background: radial-gradient(circle, rgba(208, 120, 13, 0.22) 0%, rgba(208, 120, 13, 0.06) 50%, transparent 75%);
+  filter: blur(50px);
   bottom: 10px;
   right: 20px;
   z-index: 1;
@@ -343,7 +343,7 @@ header.scrolled {
 }
 
 .metric-box:hover {
-  background: #ffffff;
+  background: var(--bg-card);
   border-color: var(--crimson-border);
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);

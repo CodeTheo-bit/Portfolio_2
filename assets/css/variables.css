@@ -1,10 +1,10 @@
-/* Design Tokens — Minimalist Noir */
+/* Design Tokens — Pure Black & Luminous Typography */
 :root {
-  /* Deep obsidian & warm charcoal background system */
-  --bg-base: #0c0b0a;
-  --bg-alt: #141312;
-  --bg-card: #181716;
-  --bg-card-subtle: #1f1d1b;
+  /* Full pitch black background system */
+  --bg-base: #000000;
+  --bg-alt: #050505;
+  --bg-card: #0a0a0a;
+  --bg-card-subtle: #121212;
   
   /* Rich wine / crimson accents */
   --crimson-rich: #c03040;
@@ -12,11 +12,11 @@
   --crimson-light: rgba(192, 48, 64, 0.15);
   --crimson-border: rgba(192, 48, 64, 0.35);
 
-  /* Warm gold accents */
-  --gold-pastel: #d4af37;
-  --gold-accent: #e5c360;
-  --gold-border: rgba(212, 175, 55, 0.25);
-  --border-subtle: rgba(250, 247, 242, 0.1);
+  /* Radiant amber / gold accents */
+  --gold-pastel: #d0780d;
+  --gold-accent: #e59020;
+  --gold-border: rgba(208, 120, 13, 0.3);
+  --border-subtle: rgba(255, 255, 255, 0.08);
 
   /* White and Luminous Off-White Typography System */
   --text-main: #ffffff;         /* Pure crisp white for all main titles & headings */

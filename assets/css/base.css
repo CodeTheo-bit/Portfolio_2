@@ -6,13 +6,15 @@
 
 html {
   scroll-behavior: smooth;
-  background: var(--bg-base);
+  background-color: #000000;
+  background: #000000;
   color: var(--text-main);
   font-family: var(--font-sans);
 }
 
 body {
-  background: var(--bg-base);
+  background-color: #000000;
+  background: #000000;
   color: var(--text-main);
   overflow-x: hidden;
   min-height: 100vh;
@@ -20,38 +22,9 @@ body {
   cursor: auto;
 }
 
-/* Ambient Warm Pastel Gold / Champagne Backdrop Glows */
+/* Ambient glows removed for pitch-black background */
 .bg-aura {
-  position: fixed;
-  pointer-events: none;
-  z-index: 0;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.55;
-}
-
-.aura-1 {
-  width: 550px;
-  height: 550px;
-  background: #f0e6d2;
-  top: -120px;
-  left: -100px;
-}
-
-.aura-2 {
-  width: 520px;
-  height: 520px;
-  background: #faecee;
-  top: 30vh;
-  right: -80px;
-}
-
-.aura-3 {
-  width: 480px;
-  height: 480px;
-  background: #ebe2ce;
-  bottom: 5vh;
-  left: 20%;
+  display: none !important;
 }
 
 .container {

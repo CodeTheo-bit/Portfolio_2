@@ -27,18 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightRaysContainer = document.getElementById('light-rays-hero');
   if (lightRaysContainer && typeof initLightRays === 'function') {
     const rays = initLightRays(lightRaysContainer, {
-      raysOrigin: 'top-center',
-      raysColor: '#faf7f2', // Neutral luminous off-white rays
-      raysSpeed: 0.85,
-      lightSpread: 1.2,
-      rayLength: 2.2,
-      pulsating: true,
-      fadeDistance: 1.0,
-      saturation: 1.15,
+      raysOrigin: 'right',
+      raysColor: '#d0780d',
+      raysSpeed: 0.7,
+      lightSpread: 0.7,
+      rayLength: 1.2,
       followMouse: true,
-      mouseInfluence: 0.18,
-      noiseAmount: 0.02,
-      distortion: 0.04,
+      mouseInfluence: 0.4,
+      noiseAmount: 0.36,
+      distortion: 0.6,
+      pulsating: true,
+      fadeDistance: 1.6,
+      saturation: 1.3,
       lightMode: false
     });
 
