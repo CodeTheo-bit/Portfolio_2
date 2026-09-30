@@ -1,0 +1,61 @@
+/* ---- LightRays.css ---- */
+.light-rays-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: inherit;
+  mix-blend-mode: screen;
+}
+
+.light-rays-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+
+/* Light rays control toggle badge */
+.light-rays-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(245, 240, 232, 0.25);
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #f5f0e8;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-transform: uppercase;
+}
+
+.light-rays-toggle:hover {
+  transform: translateY(-1px);
+  border-color: rgba(245, 240, 232, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.light-rays-toggle .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00e676;
+  box-shadow: 0 0 8px rgba(0, 230, 118, 0.8);
+}
+
+.light-rays-toggle.off .dot {
+  background: #9e9e9e;
+  box-shadow: none;
+}

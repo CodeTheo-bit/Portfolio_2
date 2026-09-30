@@ -1,0 +1,24 @@
+/* Royal Luxury Design Tokens */
+:root {
+  --cr: #8b0000;
+  --cr2: #a00010;
+  --gold: #d4af37;
+  --gold2: #f0d060;
+  --gold3: #ffeaa0;
+  --void: #020205;
+  --deep: #07070f;
+  --panel: #0c0c18;
+  --panel2: #12121e;
+  
+  /* Off-White Typography Palette */
+  --white: #ffffff;        /* Pure white */
+  --off-white: #faf7f2;    /* Luminous warm off-white */
+  --silver: #eae5dc;       /* Crisp light off-white tone */
+  --dim: #b8b2a7;          /* Elegant readable off-white */
+
+  /* Typography: Sentient as primary display serif font */
+  --fr: 'Sentient', Georgia, serif;
+  --fb: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --e: cubic-bezier(0.16, 1, 0.3, 1);
+  --e2: cubic-bezier(0.77, 0, 0.175, 1);
+}

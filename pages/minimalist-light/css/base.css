@@ -1,0 +1,100 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg-base);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-main);
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  cursor: auto;
+}
+
+/* Ambient Warm Pastel Gold / Champagne Backdrop Glows */
+.bg-aura {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.55;
+}
+
+.aura-1 {
+  width: 550px;
+  height: 550px;
+  background: #f0e6d2;
+  top: -120px;
+  left: -100px;
+}
+
+.aura-2 {
+  width: 520px;
+  height: 520px;
+  background: #faecee;
+  top: 30vh;
+  right: -80px;
+}
+
+.aura-3 {
+  width: 480px;
+  height: 480px;
+  background: #ebe2ce;
+  bottom: 5vh;
+  left: 20%;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  z-index: 2;
+}
+
+section {
+  padding: 110px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.section-header {
+  margin-bottom: 50px;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--crimson-rich);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: 'Sentient', var(--font-display);
+  font-size: clamp(2.8rem, 4.8vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.08;
+  color: var(--text-main);
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 560px;
+  line-height: 1.6;
+}

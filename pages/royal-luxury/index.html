@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>P J Tivin Elvis — Portfolio (Royal Luxury)</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap" rel="stylesheet"/>
+
+  <!-- Modular Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Ambient Scanlines & Noise Texture -->
+  <div id="noise"></div>
+  <div id="scan"></div>
+
+  <!-- Custom Cursor Removed (Standard pointer restored) -->
+
+
+  <!-- Navigation Bar -->
+  <nav id="nav">
+    <div class="ncrest">
+      <div class="nemblem"></div>
+      <div class="nname">P&middot;J&middot;T&middot;E</div>
+    </div>
+    <ul class="nlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="nwrap">
+      <button id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+      <div id="mmenu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div id="hero">
+      <!-- WebGL Volumetric Light Rays Layer -->
+      <div id="light-rays-hero" class="light-rays-container" aria-hidden="true"></div>
+      <canvas id="hcv"></canvas>
+      <div class="corner ctlc"></div>
+      <div class="corner ctrc"></div>
+      <div class="corner cblc"></div>
+      <div class="corner cbrc"></div>
+      <div class="hcont">
+        <p class="hpre">&#10022; &nbsp; Computer Science &nbsp;&middot;&nbsp; AI &amp; Machine Learning &nbsp; &#10022;</p>
+        <h1 class="hname">P J Tivin Elvis</h1>
+        <p class="htitle">Student &nbsp;<span>&middot;</span>&nbsp; Builder &nbsp;<span>&middot;</span>&nbsp; Visionary</p>
+        <div class="hctas">
+          <a href="#projects" class="btn"><span>View My Work</span></a>
+          <a href="#contact" class="btn btn-o"><span>Get In Touch</span></a>
+        </div>
+      </div>
+      <div class="hscroll"><div class="spip"></div><span>Scroll to Enter</span></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="sec">
+      <div class="sh rv">
+        <div class="sbadge">01 &nbsp; Introduction</div>
+        <h2 class="stitle">The Architect</h2>
+        <p class="ssub">Where intelligence meets artistry</p>
+      </div>
+      <div class="alay">
+        <div class="pthrone rvl">
+          <div class="pinner">
+            <img src="../../profile.png" alt="P J Tivin Elvis" onerror="this.style.display='none'"/>
+            <div class="pph">
+              <span class="phic">&#128081;</span>
+              <span class="phtx">P J Tivin Elvis<br><br>AI &amp; Machine Learning</span>
+            </div>
+          </div>
+          <div class="gem gtl"></div>
+          <div class="gem gtr"></div>
+          <div class="gem gbl"></div>
+          <div class="gem gbr"></div>
+        </div>
+        <div class="atxt rvr">
+          <p class="agr">&#10022; &nbsp; Hello, I'm</p>
+          <h3>P J Tivin Elvis &mdash;<br><em>Maker of Things</em></h3>
+          <p>I'm a Computer Science student with a fierce specialisation in Artificial Intelligence and Machine Learning. I don't just study technology &mdash; I wield it to build systems of precision, elegance, and impact.</p>
+          <p>My philosophy is simple: excellence is the only standard. Whether training a neural network, crafting an algorithm, or designing an interface, I bring the same relentless attention to detail that separates good from extraordinary.</p>
+          <p>Currently seeking opportunities where ambition meets real-world challenge &mdash; internships, research collaborations, or anything that demands both technical mastery and creative vision.</p>
+          <div class="atags">
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">React</span>
+            <span class="tag">Data Science</span>
+            <span class="tag">Neural Networks</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="sec">
+      <div class="sh rv">
+        <div class="sbadge">02 &nbsp; Arsenal</div>
+        <h2 class="stitle">Skills &amp; Mastery</h2>
+        <p class="ssub">Every tool sharpened to a fine edge</p>
+      </div>
+      <div class="orn rv"><div class="odiamond"></div></div>
+      <div class="sgrid">
+        <div class="scell rv d1" data-p="88">
+          <span class="sico">&#129302;</span>
+          <div class="sname">Artificial Intelligence</div>
+          <div class="sdesc">Deep learning, neural architectures, reinforcement learning and model optimisation across real-world datasets.</div>
+          <div class="sbar-w"><div class="sbar"></div><span class="spct">88%</span></div>
+        </div>
+        <div class="scell rv d2" data-p="82">
+          <span class="sico">&#128013;</span>
+          <div class="sname">Python &amp; Data Science</div>
+          <div class="sdesc">NumPy, Pandas, Scikit-learn, PyTorch &mdash; from raw data wrangling to production-ready pipelines.</div>
+          <div class="sbar-w"><div class="sbar"></div><span class="spct">82%</span></div>
+        </div>
+        <div class="scell rv d3" data-p="75">
+          <span class="sico">&#9000;&#65039;</span>
+          <div class="sname">Web Development</div>
+          <div class="sdesc">React, JavaScript, HTML/CSS &mdash; building interfaces as performant as they are beautiful.</div>
+          <div class="sbar-w"><div class="sbar"></div><span class="spct">75%</span></div>
+        </div>
+        <div class="scell rv d1" data-p="79">
+          <span class="sico">&#128065;&#65039;</span>
+          <div class="sname">Computer Vision</div>
+          <div class="sdesc">OpenCV, YOLO, image segmentation &mdash; teaching machines to see and understand the visual world.</div>
+          <div class="sbar-w"><div class="sbar"></div><span class="spct">79%</span></div>
+        </div>
+        <div class="scell rv d2" data-p="70">
+          <span class="sico">&#128202;</span>
+          <div class="sname">Data Visualisation</div>
+          <div class="sdesc">Matplotlib, Plotly, D3 &mdash; turning complex datasets into visual stories that demand attention.</div>
+          <div class="sbar-w"><div class="sbar"></div><span class="spct">70%</span></div>
+        </div>
+        <div class="scell rv d3" data-p="85">
+          <span class="sico">&#129513;</span>
+          <div class="sname">Problem Solving</div>
+          <div class="sdesc">Algorithms, system design, architectural thinking &mdash; breaking the impossible into elegant steps.</div>
+          <div class="sbar-w"><div class="sbar"></div><span class="spct">85%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="sec">
+      <div class="sh rv">
+        <div class="sbadge">03 &nbsp; Works</div>
+        <h2 class="stitle">Selected Projects</h2>
+        <p class="ssub">Ventures forged in code and ambition</p>
+      </div>
+      <div class="pgrid">
+        <div class="pcard rv d1">
+          <div class="pvis" style="background:linear-gradient(135deg,#0d0005,#1a0808)">
+            <div class="pglyph">I</div>
+            <div class="pshine"></div>
+          </div>
+          <div class="pbody">
+            <div class="pnum">Project 001</div>
+            <div class="pcat">Machine Learning</div>
+            <h3 class="ptitle">Deep Learning Architecture</h3>
+            <p class="pdesc">Neural network models engineered for high accuracy and optimized tensor performance.</p>
+            <a href="https://github.com/CodeTheo-bit" target="_blank" rel="noopener" class="plink">Explore <span class="parr">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="pcard rv d2">
+          <div class="pvis" style="background:linear-gradient(135deg,#05000d,#100818)">
+            <div class="pglyph">II</div>
+            <div class="pshine"></div>
+          </div>
+          <div class="pbody">
+            <div class="pnum">Project 002</div>
+            <div class="pcat">Computer Vision</div>
+            <h3 class="ptitle">Real-time Detection Vision</h3>
+            <p class="pdesc">Object recognition and feature detection pipelines operating seamlessly at 30+ frames per second.</p>
+            <a href="https://github.com/CodeTheo-bit" target="_blank" rel="noopener" class="plink">Explore <span class="parr">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="pcard rv d3">
+          <div class="pvis" style="background:linear-gradient(135deg,#080d00,#101808)">
+            <div class="pglyph">III</div>
+            <div class="pshine"></div>
+          </div>
+          <div class="pbody">
+            <div class="pnum">Project 003</div>
+            <div class="pcat">Full-Stack Web</div>
+            <h3 class="ptitle">Intelligent Web Interface</h3>
+            <p class="pdesc">High-performance reactive frontend systems with clean architecture and solid backend integration.</p>
+            <a href="https://github.com/CodeTheo-bit" target="_blank" rel="noopener" class="plink">Explore <span class="parr">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="pcard rv d4">
+          <div class="pvis" style="background:linear-gradient(135deg,#0a0500,#181008)">
+            <div class="pglyph">IV</div>
+            <div class="pshine"></div>
+          </div>
+          <div class="pbody">
+            <div class="pnum">Project 004</div>
+            <div class="pcat">Data Science</div>
+            <h3 class="ptitle">Predictive Analytics Suite</h3>
+            <p class="pdesc">Multidimensional statistical models and interactive visualizations delivering deep algorithmic insights.</p>
+            <a href="https://github.com/CodeTheo-bit" target="_blank" rel="noopener" class="plink">Explore <span class="parr">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px;" class="rv">
+        <a href="https://github.com/CodeTheo-bit" target="_blank" rel="noopener" class="btn"><span>All Projects on GitHub &nbsp;&nearr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests & Widgets Section -->
+  <section id="interests">
+    <div class="sec" style="padding-bottom:0">
+      <div class="sh rv">
+        <div class="sbadge">04 &nbsp; Passions</div>
+        <h2 class="stitle">Beyond the Code</h2>
+        <p class="ssub">Interactive worlds. One relentless mind.</p>
+      </div>
+    </div>
+    <div class="sec" style="padding-top:30px">
+      <div class="wgrid">
+
+        <!-- TRADING WIDGET -->
+        <div class="widget rv d1">
+          <div class="wh">
+            <span class="wico">&#128200;</span>
+            <span class="wtitle">Trading</span>
+            <span class="wbadge live">LIVE SIM</span>
+          </div>
+          <div class="tboard">
+            <div class="trow" id="t1"><span class="tsym">AAPL</span><span class="tprice">--</span><span class="tchg up">--</span></div>
+            <div class="trow" id="t2"><span class="tsym">TSLA</span><span class="tprice">--</span><span class="tchg up">--</span></div>
+            <div class="trow" id="t3"><span class="tsym">NVDA</span><span class="tprice">--</span><span class="tchg up">--</span></div>
+            <div class="trow" id="t4"><span class="tsym">BTC</span><span class="tprice">--</span><span class="tchg up">--</span></div>
+          </div>
+          <canvas id="chartcv" height="60"></canvas>
+          <p class="wdesc">Markets are the ultimate real-time strategy game. I study price action, risk management, and the psychology behind every move.</p>
+        </div>
+
+        <!-- BOOKSHELF WIDGET -->
+        <div class="widget rv d2">
+          <div class="wh">
+            <span class="wico">&#128218;</span>
+            <span class="wtitle">Reading</span>
+            <span class="wbadge">BOOKSHELF</span>
+          </div>
+          <div class="bshelf">
+            <div class="book b1" data-title="Thinking Fast &amp; Slow" data-auth="Kahneman"><div class="bspine">Thinking Fast &amp; Slow</div></div>
+            <div class="book b2" data-title="The Art of War" data-auth="Sun Tzu"><div class="bspine">The Art of War</div></div>
+            <div class="book b3" data-title="Atomic Habits" data-auth="James Clear"><div class="bspine">Atomic Habits</div></div>
+            <div class="book b4" data-title="Flash Boys" data-auth="Michael Lewis"><div class="bspine">Flash Boys</div></div>
+            <div class="book b5" data-title="Zero to One" data-auth="Peter Thiel"><div class="bspine">Zero to One</div></div>
+          </div>
+          <div class="btip" id="btip">Hover a book spine to peek inside</div>
+          <p class="wdesc">Books are compressed wisdom. Every great idea I've had started on a page. Hover a spine to peek inside.</p>
+        </div>
+
+        <!-- BASKETBALL WIDGET -->
+        <div class="widget rv d3">
+          <div class="wh">
+            <span class="wico">&#127936;</span>
+            <span class="wtitle">Basketball</span>
+            <span class="wbadge">SHOOT!</span>
+          </div>
+          <div class="cwrap">
+            <canvas id="bballcv" height="140"></canvas>
+            <div class="bstats">
+              <div class="bsstat"><div class="bsn" id="bsmade">0</div><div class="bsl">Made</div></div>
+              <div class="bsstat"><div class="bsn" id="bspct">--</div><div class="bsl">FG%</div></div>
+              <div class="bsstat"><div class="bsn" id="bsstreak">0</div><div class="bsl">Streak</div></div>
+            </div>
+          </div>
+          <p class="wdesc">Basketball sharpened my instincts &mdash; reading the play before it happens, moving with purpose, competing every possession. Click anywhere to shoot!</p>
+        </div>
+
+        <!-- COMPETITIVE WIDGET -->
+        <div class="widget rv d4">
+          <div class="wh">
+            <span class="wico">&#127942;</span>
+            <span class="wtitle">Competitive</span>
+            <span class="wbadge">RANKED</span>
+          </div>
+          <div class="lboard" id="lboard"></div>
+          <div class="cbwrap">
+            <div class="cblabel">Win Rate</div>
+            <div class="cbtrack"><div class="cbfill" id="cbfill"></div></div>
+            <div class="cbpct" id="cbpct">--</div>
+          </div>
+          <p class="wdesc">Winning is a habit. I chase rank in everything I do &mdash; not for the title, but for the discipline the climb demands.</p>
+        </div>
+
+        <!-- F1 RACING TRACK — full width -->
+        <div class="widget w-track rv" style="grid-column:1/-1">
+          <div class="wh" style="border-bottom:none">
+            <span class="wico">&#127950;</span>
+            <span class="wtitle">Formula 1</span>
+            <span class="wbadge live">INTERACTIVE</span>
+          </div>
+          <canvas id="tcv2" height="220" style="width:100%;display:block;"></canvas>
+          <p class="wdesc">Engineering, strategy, and human performance converging at 300 km/h. <strong style="color:var(--gold)">Click the track to trigger a turbo boost!</strong></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="sec">
+      <div class="sh rv">
+        <div class="sbadge">05 &nbsp; Connect</div>
+        <h2 class="stitle">Make Contact</h2>
+        <p class="ssub">Ready for the next grand challenge</p>
+      </div>
+      <div class="orn rv"><div class="odiamond"></div></div>
+      <div class="cmain rv">
+        <p>Whether you bring an opportunity, a collaboration, or simply a remarkable idea &mdash;</p>
+        <a href="mailto:tivinelvis@gmail.com" class="cemail">tivinelvis@gmail.com</a>
+      </div>
+      <div class="clinks rv">
+        <a href="https://www.instagram.com/elvis.vibes?igsh=ZG9yM2I3bXc5Mm1w" target="_blank" rel="noopener noreferrer" class="clink"><span class="cico">📸</span><span>Instagram</span></a>
+        <a href="https://www.linkedin.com/in/tivin-elvis-pj-bb8301345/" target="_blank" rel="noopener noreferrer" class="clink"><span class="cico">🔗</span><span>LinkedIn</span></a>
+        <a href="https://github.com/CodeTheo-bit" target="_blank" rel="noopener noreferrer" class="clink"><span class="cico">🐱</span><span>GitHub</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <span>&copy; 2026 P J Tivin Elvis</span>
+    <span>Forged with precision &amp; fire &bull; Royal Theme</span>
+  </footer>
+
+  <!-- Theme Switcher Pill -->
+  <aside class="theme-picker-royal" aria-label="Theme switcher">
+    <span>Themes:</span>
+    <a href="../minimalist-light/index.html" title="Minimalist Light Theme">Minimalist</a>
+    <a href="../noir-aztec/index.html" title="Noir Aztec Theme">Noir Aztec</a>
+    <a href="index.html" class="active" title="Royal Luxury Theme (Current)">Royal Luxury</a>
+  </aside>
+
+  <!-- Modular Scripts -->
+  <script src="js/light-rays.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
