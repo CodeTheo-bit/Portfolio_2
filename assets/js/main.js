@@ -23,6 +23,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Scroll Spy for sticky navigation links
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  function updateActiveNavLink() {
+    const scrollPosition = window.scrollY + 140; // offset for fixed header
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
+      if (scrollPosition >= top && scrollPosition < top + height) {
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+        });
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNavLink, { passive: true });
+
   // Initialize React Bits Ferrofluid background across the entire page
   const ferrofluidContainer = document.getElementById('ferrofluid-bg');
   if (ferrofluidContainer && typeof initFerrofluid === 'function') {
