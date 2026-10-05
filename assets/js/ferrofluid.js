@@ -213,7 +213,7 @@ void main() {
       rimWidth: 0.12,
       sharpness: 1.6,
       shimmer: 1.2,
-      glow: 1.1,
+      glow: 1.21,
       flowDirection: 'left',
       opacity: 1,
       mouseInteraction: false,
@@ -437,6 +437,19 @@ void main() {
       resume() {
         config.paused = false;
         animationId = requestAnimationFrame(loop);
+      },
+      setGlow(val) {
+        config.glow = val;
+        gl.uniform1f(uLocs.uGlow, val);
+      },
+      setOptions(opts = {}) {
+        Object.assign(config, opts);
+        if (opts.glow !== undefined) gl.uniform1f(uLocs.uGlow, opts.glow);
+        if (opts.speed !== undefined) gl.uniform1f(uLocs.uSpeed, opts.speed);
+        if (opts.scale !== undefined) gl.uniform1f(uLocs.uScale, opts.scale);
+        if (opts.opacity !== undefined) gl.uniform1f(uLocs.uOpacity, opts.opacity);
+        if (opts.shimmer !== undefined) gl.uniform1f(uLocs.uShimmer, opts.shimmer);
+        if (opts.sharpness !== undefined) gl.uniform1f(uLocs.uSharpness, opts.sharpness);
       },
       destroy() {
         isRunning = false;

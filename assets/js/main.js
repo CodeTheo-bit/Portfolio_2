@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       rimWidth: 0.12,
       sharpness: 1.6,
       shimmer: 1.2,
-      glow: 1.1,
+      glow: 1.21,
       flowDirection: "left",
       opacity: 1,
       mouseInteraction: false,
